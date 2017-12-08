@@ -10,12 +10,15 @@ public class Factorielle
     }
     
     public long calculer(long n) {
+    	System.out.println(n);
+    	
     		if (n > 1) {
     			return n * calculer(n-1);
+    			
     		} else if (n < 0) {
     			throw new IllegalArgumentException();
-    		}
-    		return n;
+    		    		}
+    		return 1;}
+   	     
     }
 
-}
